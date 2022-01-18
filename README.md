@@ -57,9 +57,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Can be improved 
 
-Unit testing covered in the project are very basic level, i there are few test cases which are missing.
-e2e testing has not been implmented,it seems need more time to cover this topic as well.
-One more area where i really wanted to focus on is 'form controls', although i have been playing with only select element in this project. Even though that can be more dry. Which is not following SRP Principal.
+Unit testing covered in this project are very basic, moreover there are few test cases which are missing.
+E2e testing has not been implmented, it seems need more time to cover this topic as well.
+One more area where i really wanted to focus on is 'form controls', although i have been playing with only select element in this project. Even though that can be more dry, Which is not following SRP Principal.
 
 ## Further help
 
