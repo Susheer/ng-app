@@ -55,7 +55,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 E2E Testing is not available in this release. However this project does support e2e testing as well that can implemented.
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Can be improvement
+## Can be improved 
 
 Unit testing covered in the project are very basic level, i there are few test cases which are missing.
 e2e testing has not been implmented,it seems need more time to cover this topic as well.
