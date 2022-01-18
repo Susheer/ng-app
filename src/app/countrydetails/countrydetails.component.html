@@ -17,7 +17,18 @@
         {{selectedCountry.population}}
       </td>
       <td>
-        {{selectedCountry.population}}
+        <div style="display: flex; flex-direction: column;">
+          <span *ngFor="let obj of getValue(selectedCountry.currencies);" style="font-size: small;">
+        
+            {{obj.name}}
+            {{obj.symbol}}
+         
+      
+        </span>
+        </div>
+        
+
+        
       </td>
       <td>
         <img [src]="selectedCountry.flags[0]" style="height: 100px; width: 100px;"/>
