@@ -1,0 +1,12 @@
+<form   [formGroup]="reactiveForm">
+    <select  class="form-select m-auto" formControlName="region" (change)="changeRegion($event)">
+       <option value="" >Choose region</option>
+       <option *ngFor="let region of regions;" value='{{region | uppercase}}'>{{region}}</option>
+     </select>
+     <div class="mt-2">
+       <select class="form-select" *ngIf="selectedRegion" formControlName="country" (change)="changeCountry($event)">
+         <option value="" >Choose Country</option>
+         <option *ngFor="let country of countries; let i=index"  value='{{i}}'>{{country.name.common }}</option>
+       </select>
+     </div>
+     </form>

@@ -1,0 +1,29 @@
+<table class="table" *ngIf="selectedCountry">
+    <tr>
+      <th>Name</th>
+      <th>Capital</th>
+      <th>Population</th>
+      <th>Currencies</th>
+      <th>flag</th>
+    </tr>
+    <tr>
+      <td>
+        {{selectedCountry.name.common}}
+      </td>
+      <td>
+        {{selectedCountry.capital.join()}}
+      </td>
+      <td>
+        {{selectedCountry.population}}
+      </td>
+      <td>
+        {{selectedCountry.population}}
+      </td>
+      <td>
+        <img [src]="selectedCountry.flags[0]" style="height: 100px; width: 100px;"/>
+        
+      </td>
+    </tr>
+  </table>
+
+  <button class="btn btn-primary"  (click)="loadCountry()">Load Country</button>
