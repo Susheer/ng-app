@@ -13,10 +13,18 @@ export class CountrydetailsComponent implements OnInit {
   constructor(public store: Store) {}
   loadCountry() {
     let localStore: any = {};
+    this.selectedCountry?.currencies;
     this.store.pipe(take(1)).subscribe((s) => (localStore = s));
     if (localStore.state?.selectedCountry) {
       this.selectedCountry = localStore.state?.selectedCountry;
     }
   }
+  getValue(object: any): { name: string; symbol: string }[] {
+    return Object.values(object);
+  }
   ngOnInit(): void {}
 }
+// let curr = {
+//   gpk: { name: 'he', symbol: 's1' },
+//   gpk2: { name: 'he2', symbol: 's2' },
+// };
